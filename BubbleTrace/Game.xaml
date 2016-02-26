@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" HorizontalAlignment="Center" VerticalAlignment="Center">
 
-    <Grid x:Name="Background" Background="#FF9546F3">
+    <Grid x:Name="Background" Background="#FF05000A">
         <Grid x:Name="Playground" Height="340" Width="340" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
@@ -28,8 +28,8 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle2" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Margin="0" Grid.Column="1" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle3" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Margin="0" Grid.Column="2" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle2" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="White" VerticalAlignment="Center" Width="34" Margin="0" Grid.Column="1" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle3" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="White" VerticalAlignment="Center" Width="34" Margin="0" Grid.Column="2" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
@@ -39,9 +39,9 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle4" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle5" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle6" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle4" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle5" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle6" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
@@ -52,10 +52,10 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle7" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle8" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle9" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle10" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle7" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle8" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle9" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle10" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="4">
                 <Grid.ColumnDefinitions>
@@ -67,11 +67,11 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle11" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle12" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle13" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle14" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle15" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle11" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle12" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle13" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle14" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle15" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="5">
                 <Grid.ColumnDefinitions>
@@ -84,12 +84,12 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle16" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle17" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle18" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle19" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle20" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle21" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle16" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle17" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle18" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle19" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle20" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle21" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="6">
                 <Grid.ColumnDefinitions>
@@ -103,13 +103,13 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle22" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle23" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle24" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle25" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle26" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle27" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle28" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7" Margin="0" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle22" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle23" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle24" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle25" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle26" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle27" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle28" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="7">
                 <Grid.ColumnDefinitions>
@@ -124,14 +124,14 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle29" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle30" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle31" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle32" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle33" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle34" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle35" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle36" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="8" Margin="0" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle29" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle30" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle31" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle32" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle33" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle34" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle35" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle36" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="8" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="8">
                 <Grid.ColumnDefinitions>
@@ -147,15 +147,15 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle37" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped" Fill="#FFF4F4F5"/>
-                <Ellipse x:Name="Circle38" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle39" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle40" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle41" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle42" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle43" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle44" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="8" Margin="0" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle45" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="9" Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle37" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Margin="0" Tapped="Circle_Tapped" Fill="White"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle38" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2" Margin="0" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle39" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3" Margin="0" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle40" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4" Margin="0" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle41" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5" Margin="0" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle42" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6" Margin="0" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle43" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7" Margin="0" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle44" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="8" Margin="0" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle45" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="9" Tapped="Circle_Tapped"  StrokeThickness="0"/>
             </Grid>
             <Grid Grid.Row="9">
                 <Grid.ColumnDefinitions>
@@ -172,18 +172,18 @@
                     <ColumnDefinition Width="34"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Ellipse x:Name="Circle46" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle47" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle48" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle49" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle50" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle51" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle52" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle53" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="8"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle54" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="9"  Tapped="Circle_Tapped"/>
-                <Ellipse x:Name="Circle55" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="10"  Tapped="Circle_Tapped"/>
+                <Ellipse x:Name="Circle46" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="1" Tapped="Circle_Tapped"  StrokeThickness="0"/>
+                <Ellipse x:Name="Circle47" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="2"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle48" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="3"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle49" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="4"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle50" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="5"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle51" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="6"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle52" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="7"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle53" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="8"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle54" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="9"  Tapped="Circle_Tapped" StrokeThickness="0"/>
+                <Ellipse x:Name="Circle55" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Grid.Column="10" Tapped="Circle_Tapped" StrokeThickness="0"/>
             </Grid>
-            <Ellipse x:Name="Circle" Fill="#FFF4F4F5" HorizontalAlignment="Center" Height="34" Stroke="Black" VerticalAlignment="Center" Width="34" Margin="0" Tapped="Circle_Tapped"/>
+            <Ellipse x:Name="Circle1" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="White" VerticalAlignment="Center" Width="34" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
         </Grid>
     </Grid>
 </Page>
