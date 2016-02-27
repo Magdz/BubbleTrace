@@ -1,4 +1,5 @@
-﻿using Windows.UI;
+﻿using System;
+using Windows.UI;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
@@ -19,6 +20,14 @@ namespace BubbleTrace
         private Color ColorEmpty = Color.FromArgb(255, 255, 255, 255);
         private Color Color;
         private Ellipse[] Circles;
+
+        int[] traverse = new int[] { 0, 1, 3, 6, 10, 15, 21, 28, 36, 45 };
+        int[] reverse = new int[] { 0, 2, 5, 9, 14, 20, 27, 35, 44, 54 };
+
+        bool[] Rows = new bool[10];
+        bool[] Left = new bool[10];
+        bool[] Right = new bool[10];
+
         public Game()
         {
             this.InitializeComponent();
@@ -47,22 +56,19 @@ namespace BubbleTrace
 
         private void CheckPoints()
         {
-            int[] traverse = new int[] { 0, 1, 3, 6, 10, 15, 21, 28, 36, 45 };
-            int[] reverse = new int[] { 0, 2, 5, 9, 14, 20, 27, 35, 44, 54 };
-
             for (int i = 0; i < traverse.Length; ++i) 
             {
-                CheckRow(traverse[i], i+1);
-                CheckDiagonal(traverse[i], 10 - i, i + 1);
-                CheckDiagonal(reverse[i], 10 - i, i);
+                if (!Rows[i]) Rows[i] = CheckRow(traverse[i], i + 1);
+                if (!Left[i]) Left[i] = CheckDiagonal(traverse[i], 10 - i, i + 1);
+                if (!Right[i]) Right[i] = CheckDiagonal(reverse[i], 10 - i, i);
             }
         }
 
-        private void CheckRow(int start, int length)
+        private bool CheckRow(int start, int length)
         {
             for (int i = start; i < start + length; ++i)
             {
-                if (((SolidColorBrush)(Circles[i].Fill)).Color == ColorEmpty) return;
+                if (((SolidColorBrush)(Circles[i].Fill)).Color == ColorEmpty) return false;
             }
             for (int i = start; i < start + length; ++i)
             {
@@ -70,15 +76,17 @@ namespace BubbleTrace
                 solidBrush.Color = ColorGray;
                 Circles[i].Fill = solidBrush;
             }
+            AddScore(length);
+            return true;
         }
 
-        private void CheckDiagonal(int start, int length, int increment)
+        private bool CheckDiagonal(int start, int length, int increment)
         {
             int TempInc = increment;
             int toCheck = start;
             for (int i = 0; i < length; ++i, toCheck += increment) 
             {
-                if (((SolidColorBrush)(Circles[toCheck].Fill)).Color == ColorEmpty) return;
+                if (((SolidColorBrush)(Circles[toCheck].Fill)).Color == ColorEmpty) return false;
                 increment++;
             }
             increment = TempInc;
@@ -90,7 +98,20 @@ namespace BubbleTrace
                 Circles[toCheck].Fill = solidBrush;
                 increment++;
             }
+            AddScore(length);
+            return true;
         }
 
+        private void AddScore(int Score)
+        {
+            if (Color == ColorBlue)
+            {
+                RedScore.Text = (int.Parse(RedScore.Text) + Score).ToString();
+            }
+            else
+            {
+                BlueScore.Text = (int.Parse(BlueScore.Text) + Score).ToString();
+            }
+        }
     }
 }

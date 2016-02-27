@@ -5,7 +5,7 @@
     xmlns:local="using:BubbleTrace"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" HorizontalAlignment="Center" VerticalAlignment="Center">
+    mc:Ignorable="d" Width="360" Height="640">
 
     <Grid x:Name="Background" Background="#FF05000A">
         <Grid x:Name="Playground" Height="340" Width="340" Margin="10,10,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
@@ -185,5 +185,9 @@
             </Grid>
             <Ellipse x:Name="Circle1" Fill="White" HorizontalAlignment="Center" Height="34" Stroke="White" VerticalAlignment="Center" Width="34" Margin="0" Tapped="Circle_Tapped" StrokeThickness="0"/>
         </Grid>
+        <TextBlock x:Name="RedTitle" HorizontalAlignment="Center" Margin="0,200,150,0" TextWrapping="Wrap" Text="RED" VerticalAlignment="Center" Foreground="Red" FontSize="20" FontWeight="Bold"/>
+        <TextBlock x:Name="BlueTitle" HorizontalAlignment="Center" Margin="150,200,0,0" TextWrapping="Wrap" Text="BLUE" VerticalAlignment="Center" Foreground="Blue" FontSize="20" FontWeight="Bold"/>
+        <TextBlock x:Name="RedScore" HorizontalAlignment="Center" Margin="0,250,150,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Foreground="Red" FontSize="20" FontWeight="Bold"/>
+        <TextBlock x:Name="BlueScore" HorizontalAlignment="Center" Margin="150,250,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Foreground="Blue" FontSize="20" FontWeight="Bold"/>
     </Grid>
 </Page>
