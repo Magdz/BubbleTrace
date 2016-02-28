@@ -14,6 +14,8 @@ namespace BubbleTrace
     /// </summary>
     public sealed partial class Game : Page
     {
+        private bool EndGame = false;
+
         private Color ColorRed = Color.FromArgb(255, 255, 0, 0);
         private Color ColorBlue = Color.FromArgb(255, 0, 0, 255);
         private Color ColorGray = Color.FromArgb(255, 128, 128, 128);
@@ -61,6 +63,30 @@ namespace BubbleTrace
                 if (!Rows[i]) Rows[i] = CheckRow(traverse[i], i + 1);
                 if (!Left[i]) Left[i] = CheckDiagonal(traverse[i], 10 - i, i + 1);
                 if (!Right[i]) Right[i] = CheckDiagonal(reverse[i], 10 - i, i);
+            }
+            for(int i = 0; i < traverse.Length; ++i)
+            {
+                EndGame = true;
+                if (!Rows[i] || !Left[i] || !Right[i])
+                {
+                    EndGame = false;
+                    break;
+                }
+            }
+            if (EndGame)
+            {
+                SolidColorBrush solidBrush = new SolidColorBrush();
+                if(int.Parse(RedScore.Text) > int.Parse(BlueScore.Text))
+                {
+                    WinText.Text = "Red Player Wins";
+                    solidBrush.Color = ColorRed;
+                }
+                else
+                {
+                    WinText.Text = "Blue Player Wins";
+                    solidBrush.Color = ColorBlue;
+                }
+                WinText.Foreground = solidBrush;
             }
         }
 
