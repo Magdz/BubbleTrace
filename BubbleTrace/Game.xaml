@@ -190,5 +190,7 @@
         <TextBlock x:Name="RedScore" HorizontalAlignment="Center" Margin="0,200,150,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Foreground="Red" FontSize="20" FontWeight="Bold"/>
         <TextBlock x:Name="BlueScore" HorizontalAlignment="Center" Margin="150,200,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Center" Foreground="Blue" FontSize="20" FontWeight="Bold"/>
         <TextBlock x:Name="WinText" HorizontalAlignment="Center" Margin="0,300,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" FontWeight="Bold" FontSize="20" Foreground="Red"/>
+        <Button x:Name="MainMenuButton" Content="Main Menu" HorizontalAlignment="Center" Margin="0,450,150,0" VerticalAlignment="Center" Foreground="White" Background="#33FFFFFF" BorderBrush="White" Click="MainMenuButton_Click"/>
+        <Button x:Name="PlayAgianButton" Content="Play Again" HorizontalAlignment="Center" Margin="150,450,0,0" VerticalAlignment="Center" Foreground="White" Background="#33FFFFFF" BorderBrush="White"/>
     </Grid>
 </Page>

@@ -1,5 +1,6 @@
 ﻿using System;
 using Windows.UI;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
@@ -138,6 +139,11 @@ namespace BubbleTrace
             {
                 BlueScore.Text = (int.Parse(BlueScore.Text) + Score).ToString();
             }
+        }
+
+        private void MainMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
         }
     }
 }
