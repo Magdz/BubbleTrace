@@ -53,7 +53,7 @@ namespace BubbleTrace
                 Circle.Fill = solidBrush;
                 if (Color == ColorRed) Color = ColorBlue;
                 else Color = ColorRed;
-                CheckPoints();
+                if(!EndGame)CheckPoints();
             }
         }
 
@@ -88,6 +88,10 @@ namespace BubbleTrace
                     solidBrush.Color = ColorBlue;
                 }
                 WinText.Foreground = solidBrush;
+                PlayAgianButton.IsEnabled = true;
+                Thickness margin = MainMenuButton.Margin;
+                margin.Right += 150;
+                MainMenuButton.Margin = margin;
             }
         }
 
@@ -144,6 +148,27 @@ namespace BubbleTrace
         private void MainMenuButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        private void PlayAgianButton_Click(object sender, RoutedEventArgs e)
+        {
+            EndGame = false;
+            WinText.Text = "";
+            BlueScore.Text = "0";
+            RedScore.Text = "0";
+            Rows = new bool[10];
+            Left = new bool[10];
+            Right = new bool[10];
+            SolidColorBrush solidBrush = new SolidColorBrush();
+            solidBrush.Color = ColorEmpty;
+            foreach(Ellipse Circle in Circles)
+            {
+                Circle.Fill = solidBrush;
+            }
+            PlayAgianButton.IsEnabled = false;
+            Thickness margin = MainMenuButton.Margin;
+            margin.Right -= 150;
+            MainMenuButton.Margin = margin;
         }
     }
 }
