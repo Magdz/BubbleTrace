@@ -28,9 +28,10 @@ namespace BubbleTrace
             NavigationCacheMode = NavigationCacheMode.Required;
         }
 
-        private void button_Click(object sender, RoutedEventArgs e)
+        private void StartButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(Game));
         }
+        
     }
 }
