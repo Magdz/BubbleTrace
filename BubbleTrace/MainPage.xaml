@@ -8,8 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="Black">
+        <Image x:Name="LogoImage" Height="108" Margin="10,20,20,0" VerticalAlignment="Top" Width="340" Source="Assets/StartMenu.png"/>
         <Button x:Name="StartButton" Content="Start Game" HorizontalAlignment="Center" VerticalAlignment="Center" Click="StartButton_Click" Background="#33FFFFFF" BorderBrush="White" Foreground="White"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,0,154,514" TextWrapping="Wrap" Text="Bubble" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="42.667"/>
-        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Center" Margin="174,92,80,491" TextWrapping="Wrap" Text="Trace" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" FontSize="42.667"/>
     </Grid>
 </Page>
